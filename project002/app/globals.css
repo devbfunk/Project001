@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 214, 219, 220;
+  --primary: red;
+  --secondary: blue;
+}
+
+h1 {
+  @apply text-6xl
+}
+
+h2 {
+  @apply text-4xl font-extrabold tracking-[-3px]
+}
+
+
+h3 {
+  @apply text-3xl
+}
+
+h4 {
+  @apply text-2xl
+}
+
+.container {
+  max-width: 75%;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+}
