@@ -29,19 +29,20 @@ const navLinks = [
 
 const Navbar = () => {
     return (
-        <div className='container mx-auto flex justify-between mt-6 items-center mb-8'>
-            <div>
-                <h2 className='h2'>RunCMDCreate</h2>
-            </div>
-            <div>
-                <ul className='hidden md:flex gap-8'>
-                    {navLinks.map((item, id) => (
-                        <li key={id}>
-                            <Link href={item.path} className='hover:text-gray-300 transition-all duration-500 hover:font-extrabold'>{item.name}</Link>
-                        </li>
-                    ))}
-                </ul>
-            </div>
+        <div className='container mx-auto'>
+            <div className="flex justify-between mt-6 items-center mb-8">
+                <div>
+                    <h2 className='text-4xl font-extrabold tracking-tighter'>RunCMDCreate</h2>
+                </div>
+                <div>
+                    <ul className='hidden md:flex gap-8'>
+                        {navLinks.map((item, id) => (
+                            <li key={id}>
+                                <Link href={item.path} className='hover:text-gray-300 transition-all duration-500 hover:font-extrabold'>{item.name}</Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div></div>
             <MobileNav />
         </div>
     )
